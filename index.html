@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>DX Ball by olevegard</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/olevegard">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>DX Ball</h1>
+          <p>An attempt at a DX Ball clone</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/olevegard">olevegard</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p>Hello and welcome to this weird place where I am writing to none other than myself!</p>
+
+<p>First of all, I'd like to say that the name is not final, I just haven't figured out a clever name for it yet. Maybe I never will. </p>
+
+<p>As you probably have guessed by now, this game draws a lot of inspiration from DX Ball. The reason I choose to do a DX Ball remake is that it's quite easy to make. I have tried making more complex games earlier, and failed. So I think DX Ball is a fitting one-person challenge. </p>
+
+<h1>
+<a name="technology" class="anchor" href="#technology"><span class="octicon octicon-link"></span></a>Technology</h1>
+
+<p>As for technology, this game will be written almost entirely in C++11¹. The code is to remain platform-independent². </p>
+
+<p>When it comes to third party libraries, only <code>SDL2.0</code> will be used. With the possible addition of <code>OpenGL</code> later on. But since <code>SDL2.0</code> already uses <code>OpenGL</code>, it might not be necessary.</p>
+
+<h1>
+<a name="coding-standards" class="anchor" href="#coding-standards"><span class="octicon octicon-link"></span></a>Coding standards</h1>
+
+<p>The coding standards at this project is yet to be properly defined. However, there are a few rules.</p>
+
+<h2>
+<a name="stylistic" class="anchor" href="#stylistic"><span class="octicon octicon-link"></span></a>Stylistic</h2>
+
+<ul>
+<li>Always put angle brackets ( <code>{</code> and <code>}</code> )</li>
+<li>Function names starts with uppercase letters and uses camel case. Underscore is permitted in some cases.</li>
+<li>Variable names start with a lowercase letter, and uses camel case. Underscore is permitted in some cases.</li>
+<li>(System³) Hungarian notation is not permitted.</li>
+</ul><h2>
+<a name="general" class="anchor" href="#general"><span class="octicon octicon-link"></span></a>General</h2>
+
+<ul>
+<li>The code is to be compiled with <code>./buildDXB.h</code>. ANY warnings that occurs are to be fixed properly. </li>
+<li>As far as possible, prevent the use of this to assign variables etc. </li>
+<li>People are permitted to kick anyone who uses a macro</li>
+<li>Cost are to be applied to variables passed by reference and functions whenever possible. </li>
+<li>Functions are not to be longer than one screen length unless you have a really good reason.</li>
+<li>Use proper names for variables and functions. Long names is not an issue, unless it's approaching 80 chars</li>
+<li>DON'T REPEAT YOURSELF.</li>
+<li>Keep things simple, don't rely on clever/ heavily optimized functions. </li>
+<li>Rather than writing own code, functionality in the <code>standard C++ library</code> should be used.</li>
+</ul><p>Following the above rules, there will be more code to write. But your code will require less comments and will be easier to understand and debug. ( Anyone who claims they don't produce bugs are liars. )</p>
+
+<p>¹ If the game is ever ported to work on <code>iPhone/iPad</code>, the code might have to be ported to Objective <code>C++(11)</code> <br>
+² As of now, the code only works on <code>Linux</code>, this is due to lack of timing functions. But it'll be easy to port the <code>Timer</code> class to <code>Windows</code><br>
+³ <a href="http://en.wikipedia.org/wiki/Hungarian_notation#Systems_vs._Apps_Hungarian">http://en.wikipedia.org/wiki/Hungarian_notation#Systems_vs._Apps_Hungarian</a>.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
