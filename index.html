@@ -35,50 +35,37 @@
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
-        <p>Hello and welcome to this weird place where I am writing to none other than myself!</p>
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>First of all, I'd like to say that the name is not final, I just haven't figured out a clever name for it yet. Maybe I never will. </p>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<p>As you probably have guessed by now, this game draws a lot of inspiration from DX Ball. The reason I choose to do a DX Ball remake is that it's quite easy to make. I have tried making more complex games earlier, and failed. So I think DX Ball is a fitting one-person challenge. </p>
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
 
-<h1>
-<a name="technology" class="anchor" href="#technology"><span class="octicon octicon-link"></span></a>Technology</h1>
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<p>As for technology, this game will be written almost entirely in C++11¹. The code is to remain platform-independent². </p>
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<p>When it comes to third party libraries, only <code>SDL2.0</code> will be used. With the possible addition of <code>OpenGL</code> later on. But since <code>SDL2.0</code> already uses <code>OpenGL</code>, it might not be necessary.</p>
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h1>
-<a name="coding-standards" class="anchor" href="#coding-standards"><span class="octicon octicon-link"></span></a>Coding standards</h1>
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<p>The coding standards at this project is yet to be properly defined. However, there are a few rules.</p>
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h2>
-<a name="stylistic" class="anchor" href="#stylistic"><span class="octicon octicon-link"></span></a>Stylistic</h2>
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<ul>
-<li>Always put angle brackets ( <code>{</code> and <code>}</code> )</li>
-<li>Function names starts with uppercase letters and uses camel case. Underscore is permitted in some cases.</li>
-<li>Variable names start with a lowercase letter, and uses camel case. Underscore is permitted in some cases.</li>
-<li>(System³) Hungarian notation is not permitted.</li>
-</ul><h2>
-<a name="general" class="anchor" href="#general"><span class="octicon octicon-link"></span></a>General</h2>
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<ul>
-<li>The code is to be compiled with <code>./buildDXB.h</code>. ANY warnings that occurs are to be fixed properly. </li>
-<li>As far as possible, prevent the use of this to assign variables etc. </li>
-<li>People are permitted to kick anyone who uses a macro</li>
-<li>Cost are to be applied to variables passed by reference and functions whenever possible. </li>
-<li>Functions are not to be longer than one screen length unless you have a really good reason.</li>
-<li>Use proper names for variables and functions. Long names is not an issue, unless it's approaching 80 chars</li>
-<li>DON'T REPEAT YOURSELF.</li>
-<li>Keep things simple, don't rely on clever/ heavily optimized functions. </li>
-<li>Rather than writing own code, functionality in the <code>standard C++ library</code> should be used.</li>
-</ul><p>Following the above rules, there will be more code to write. But your code will require less comments and will be easier to understand and debug. ( Anyone who claims they don't produce bugs are liars. )</p>
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<p>¹ If the game is ever ported to work on <code>iPhone/iPad</code>, the code might have to be ported to Objective <code>C++(11)</code> <br>
-² As of now, the code only works on <code>Linux</code>, this is due to lack of timing functions. But it'll be easy to port the <code>Timer</code> class to <code>Windows</code><br>
-³ <a href="http://en.wikipedia.org/wiki/Hungarian_notation#Systems_vs._Apps_Hungarian">http://en.wikipedia.org/wiki/Hungarian_notation#Systems_vs._Apps_Hungarian</a>.</p>
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
 
     </div>
